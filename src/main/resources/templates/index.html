@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Artykuły</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>Artykuły</h1>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Tytuł</th>
+                    <th>Autor</th>
+                    <th>Data</th>
+                    <th>Akcje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="artykul : ${artykuly}">
+                    <td th:text="${artykul.tytul}"></td>
+                    <td th:text="${artykul.autor}"></td>
+                    <td th:text="${#dates.format(artykul.data, 'dd-MM-yyyy')}"></td>
+                    <td>
+                        <a th:href="@{'/artykul/' + ${artykul.id}}" class="btn btn-primary">Zobacz</a>
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

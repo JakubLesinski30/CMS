@@ -1,4 +1,4 @@
-package PortfolioJL.JakubLesinski;
+package JL.JakubLesinski;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
