@@ -1,13 +1,13 @@
-package JL.JakubLesinski;
+package Twoj.Blog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JakubLesinskiApplication {
+public class Aplikacja {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JakubLesinskiApplication.class, args);
+		SpringApplication.run(Aplikacja.class, args);
 	}
 
 }

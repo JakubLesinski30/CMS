@@ -1,4 +1,4 @@
-package JL.JakubLesinski;
+package Twoj.Blog;
 
 import java.util.Date;
 

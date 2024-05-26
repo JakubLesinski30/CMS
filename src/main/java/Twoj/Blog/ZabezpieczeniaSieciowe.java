@@ -1,4 +1,4 @@
-package JL.JakubLesinski;
+package Twoj.Blog;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -43,8 +43,8 @@ public class ZabezpieczeniaSieciowe extends WebSecurityConfigurerAdapter {
     @Bean
     public InMemoryUserDetailsManager userDetailsService() {
         UserDetails user = User.builder()
-            .username("test@test")
-            .password(passwordEncoder().encode("test"))
+            .username("admin")
+            .password(passwordEncoder().encode("admin"))
             .roles("USER")
             .build();
         return new InMemoryUserDetailsManager(user);
